@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Image Sequence Animation on Scroll</title>
+
+
+    
+    <style>
+    section {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:white;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+section.active {
+  visibility: visible;
+}
+       
+    </style>
+<script>
+   let sections = document.getElementsByTagName('section');
+// tracks index of current section
+let currentSectionIndex = 0;
+
+document.addEventListener('wheel', e => {
+  if (e.wheelDeltaY > 0 && currentSectionIndex - 1 >= 0) {
+    // wheel up
+    sections[currentSectionIndex].className = '';
+    currentSectionIndex--;
+    sections[currentSectionIndex].className = 'active';
+  } else if (e.wheelDeltaY < 0 && currentSectionIndex + 1 < sections.length) {
+    // wheel down
+    sections[currentSectionIndex].className = '';
+    currentSectionIndex++;
+    sections[currentSectionIndex].className = 'active';
+  }
+});
+    </script>
+    
+    </head>
+<body>
+
+    
+    
+    <section data-section="0" class="active sec1">
+  <h1>hello! I'm the first section!</h1>
+</section>
+<section data-section="1">
+  <h2>Hello! I'm the second section!</h2>
+</section>
+<section data-section="2">
+  <h2>Hello! I'm the third section!</h2>
+</section>
+    
+    
+</body>
+</html>
