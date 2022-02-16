@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Secured Enterprise | Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+	 <meta name="keywords" content="Secured enterprise, Cyber Security, cyber threats, virus, solutions, mobile security, network security, online security, cyber threat intelligence, cyber risk management, application security, endpoint security, content and data, firewall, secure remote access, database security, web filtering, email security, data leakage, encryption, web application security, enterprise vault, hacker, online threats, malware, protections, trust, ">
+<meta name="Description" content="Secured Enterprise understands the importance of securing your network from threats 24/7. We have a proven track record in helping large organizations manage their security network by protecting, monitoring and analyzing data with a wide range of physical, network and virtual IT Infrastructure in real-time.  ">
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+  <link href="css/jcarousel.css" rel="stylesheet" />
+  <link href="css/flexslider.css" rel="stylesheet" />
+  <link href="css/slitslider.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Theme skin -->
+  <link id="t-colors" href="skins/red.css" rel="stylesheet" />
+  <!-- boxed bg -->
+  <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+  <link rel="shortcut icon" href="ico/favicon.png" />
+		
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KL9GKHV');</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL9GKHV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager -->
+
+
+	<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "url": "http://www2.securedenterprise.co.za/blog.html"
+  }
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Secured Enterprise",
+    "url": "http://www2.securedenterprise.co.za/",
+    "sameAs": [
+      "https://www.facebook.com/Secured-Enterprise-764738030374718/",
+      "https://plus.google.com/100941040338543587846",
+      "https://twitter.com/SecuredEnterpr8"
+    ]
+  }
+</script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script language = "javascript"> 
+
+function validateFormAndScore()
+{
+	//Validate the form
+    var xNameSurname = document.forms["riskform"]["fullname"].value;
+    if (xNameSurname == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+	
+	               
+     var xEmail = document.forms["riskform"]["email"].value;
+    if (xEmail == "") {
+        alert("Email Adress must be filled out");
+        return false;
+    }
+                
+                var xNumber = document.forms["riskform"]["number"].value;
+    if (xNumber == "") {
+        alert("Contact Number must be filled out");
+        return false;
+    }
+	
+	                var xCompanyName = document.forms["riskform"]["companyname"].value;
+    if (xCompanyName == "") {
+        alert("Company Name must be filled out");
+        return false;
+    }
+                
+                // Calculate the score
+                var show = 0;
+
+    var radios = document.forms["riskform"].getElementsByClassName("Score");
+                
+    for (i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            show = parseFloat(show) + parseFloat(radios[i].value);
+        }
+    }
+
+
+				document.getElementById("score").value = show;
+
+	
+                if (show == 0) {
+                                alert('You have not completed the Risk Assessment. Please answer the questions in order to continue.');
+								return false;
+                } 
+              //  else if(show > 0 && show <= 3) {
+//                                alert('Your score is 4/10 you are not secure.                                                       Please note, you will never be 100% fully secure, but we have great services and solutions to help protect you from harmful attacks.');
+//         
+//                    //window.location="http://www2.securedenterprise.co.za/";
+//                }
+//                else if (show > 3 && show <= 6) {
+//                                alert('Your score is 6/10 you are fairly secure.                                                    Please note, you will never be 100% fully secure, but we have great services and solutions to help protect you from harmful attacks.');
+//    
+//                             //   window.location="http://www2.securedenterprise.co.za/";
+//                }
+//                else if (show > 6 && show <= 10) {
+//                                alert('Your score is 8/10 you are secure.                                                           Please note, you will never be 100% fully secure, but we have great services and solutions to help protect you from harmful attacks.');
+//                   
+//                         //       window.location="http://www2.securedenterprise.co.za/";
+//                }              
+}
+
+</script>
+
+  <!-- =======================================================
+    Theme Name: Flattern
+    Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+   <div id="wrapper">
+    <!-- toggle top area -->
+   
+    <!-- end toggle top area -->
+    <!-- start header -->
+    <header class="header">
+      <div class="container">
+        <!-- hidden top area toggle link -->
+       
+		
+        <!-- end toggle link
+        <div class="row nomargin">
+          <div class="span12">
+            <div class="headnav">
+              <!--<ul>
+                <li><a href="#mySignup" data-toggle="modal"><i class="icon-user"></i> Sign up</a></li>
+                <li><a href="#mySignin" data-toggle="modal">Sign in</a></li>
+              </ul>
+            </div>
+            <!-- Signup Modal 
+            <div id="mySignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword">Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword2">Confirm Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword2" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Sign up</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Already have an account? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Sign in</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end signup modal
+            <!-- Sign in Modal 
+            <div id="mySignin" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySigninModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="mySigninModalLabel">Login to your <strong>account</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputText">Username</label>
+                    <div class="controls">
+                      <input type="text" id="inputText" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSigninPassword">Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputSigninPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Sign in</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Forgot password? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Reset</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end signin modal -
+            <!-- Reset Modal 
+            <div id="myReset" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="myResetModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="myResetModalLabel">Reset your <strong>password</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputResetEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputResetEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Reset password</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      We will send instructions on how to reset your password to your inbox
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end reset modal 
+          </div>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <div class="logo">
+              <a href="index.html"><img src="ico/logo.png" alt="" class="logo" /></a>
+              <h1></h1>
+            </div>
+          </div>
+        <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <ul class="nav topnav">
+                   <!-- <li class="dropdown active">
+                      <a href="index.html">Home <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="index-alt2.html">Homepage 2</a></li>
+                        <li><a href="index-alt3.html">Homepage 3</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Features <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="components.html">Components</a></li>
+                        <li><a href="animations.html">56 Animations</a></li>
+                        <li><a href="icons.html">Icons</a></li>
+                        <li><a href="icon-variations.html">Icon variations</a></li>
+                        <li class="dropdown"><a href="#">3 Sliders <i class="icon-angle-right"></i></a>
+                          <ul class="dropdown-menu sub-menu-level1">
+                            <li><a href="index.html">Nivo slider</a></li>
+                            <li><a href="index-alt2.html">Slit slider</a></li>
+                            <li><a href="index-alt3.html">Parallax slider</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>-->
+                   <!-- <li class="dropdown">
+                      <a href="#">Pages <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="pricingbox.html">Pricing boxes</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="404.html">404</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Portfolio <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
+                        <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
+                        <li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
+                        <li><a href="portfolio-detail.html">Portfolio detail</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Blog <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                        <li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
+                        <li><a href="post-left-sidebar.html">Post left sidebar</a></li>
+                        <li><a href="post-right-sidebar.html">Post right sidebar</a></li>
+                      </ul>
+                    </li>
+					   <li>
+                      <a href="index.html">Home </a>
+                    </li>
+					   <li>
+                      <a href="services.html">Services & Solutions </a>
+                    </li>
+					   <!--<li>
+                      <a href="blog.html">Blog </a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- end navigation 
+            </div>
+          </div>-->
+		  
+		  <div class="row headnav">
+		
+		     <div>
+            <div >
+              <a href="index.html"><img src="ico/logo.png" alt="logo" class="logo" /></a>
+              <h1></h1>
+            </div>
+          </div>
+			
+ <!-- <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu nav topnav">
+     <li>
+                      <a href="index.html" style="color:black">Home </a>
+                    </li>
+					   <li>
+                      <a href="services.html" style="color:black">Services & Solutions </a>
+                    </li>
+					<li>
+                      <a href="blog.html" style="color:black">Blog </a>
+                    </li>
+                    <li >
+                      <a href="contact.html" style="color:black">Contact </a>
+						</li>-->
+  </ul>
+     
+      </div>
+		</div>
+		
+		 </header>
+			</div>	
+		  
+
+    <!-- end header -->
+   <section class="cover-background tz-builder-bg-image border-none xs-padding-10px-tb hero-style2" id="hero-section2" data-img-size="(W)1920px X (H)800px" style="background: linear-gradient(rgba(22, 22, 22, 0.4), rgba(22, 22, 22, 0.4)) repeat scroll 0% 0%, rgba(0, 0, 0, 0) url('images/shutterstock_204031606.jpg') repeat scroll 0% 0%;">
+ <div class="container one-fourth-screen position-relative">
+
+<!-- slider text -->
+<div class="span12 col-sm-12 col-xs-12 text-ce xs-text-center display-table" >
+ <h2 class="sm-title-extra-large xs-title-extra-large alt-font title-extra-large-2 line-height-55 text-light-green tz-text margin-seventeen-bottom text-center" style="color: rgb(204, 0, 0) !important; background-color: rgba(0, 0, 0, 0); font-size: 45px; font-weight: 500; font-family: 'Open Sans',sans-serif !important; line text-transform: none;padding-bottom: 50px;" ><strong>How Secure Is Your Business?</strong> 
+</h2>
+                                    
+</div>
+
+
+<!-- end slider text -->
+<!-- contact form -->
+<div class="span12 " style="margin-left: 0px" >
+	   <div class="background">
+<div class="bg-black-light-rgba tz-background-color padding-seventeen border-radius-6 text-center" style="background-color:rgba(0,0,0,0.45)  height:200px; margin-top: -50px;padding-bottom:10px;">
+<h6 class="alt-font margin-twenty-bottom tz-text text-white" style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); font-size: 18px; font-weight: 500; font-family: 'Open Sans',sans-serif !important; text-transform: none; text-align:center;padding-top:20px" id="ui-id-40">Try Our Free Risk Assessment 
+<!--&amp;<br>-->
+<!--As a BONUS, a FREE Brochure!-->
+</h6>
+					
+<div class="span12   position-relative xs-margin-thirteen-bottom text-center" style="margin-left:0px">
+ 
+<form name="riskform" id="riskform" onsubmit="return validateFormAndScore()" action="assessment-form-db.php" method="post">
+ 
+ <input name="fullname" id="fullname"  type="text" placeholder="Name and Surname" style="padding-left: 20px" >
+ 
+ <input name="email" id="email"  type="text" placeholder="Email" style="padding-left: 20px">
+ 
+ <input name="number" id="number" type="text" placeholder="Phone Number" style="padding-left: 20px">
+ 
+	<input name="companyname" id="companyname" type="text" placeholder="Company Name" style="padding-left: 20px">
+ 
+<label>1 Do you centrally maintain security and event logs on servers, workstations and laptops?</label>
+<p >Yes<input type="radio" name="answer1" class="Score" value="1" style="width: 50px; height: 20px" />&nbsp;&nbsp;
+No<input type="radio" name="answer1" class="Score" value="0" checked="checked" style="width: 50px; height: 20px"/></p>
+	
+<label>2 Do you frequently apply operating system security patches?</label>
+<p >Yes<input type="radio" name="answer2" class="Score" value="1" style="width: 50px; height: 20px"/>&nbsp;&nbsp;
+No <input type="radio" name="answer2" class="Score" value="0" checked="checked" style="width: 50px; height: 20px"/></p>
+
+<label>3 Does the organization have a policy in place that allow users to use mobile devices (including BYOD devices) for accessing corporate data?</label>
+<p >Yes<input type="radio" name="answer3" class="Score" value="1" style="width: 50px; height: 20px"/>&nbsp;&nbsp;
+No<input type="radio" name="answer3" class="Score" value="0" checked="checked" style="width: 50px; height: 20px"/></p>
+
+<label>4 Are users allowed to work remotely?</label>
+<p >Yes<input type="radio" name="answer4" class="Score" value="1" style="width: 50px; height: 20px"/>&nbsp;&nbsp;
+No<input type="radio" name="answer4" class="Score" value="0" checked="checked" style="width: 50px; height: 20px"/></p>
+
+<label>5 Have you or anyone in the organization been a victim of Ransomware?</label>
+<p  >Yes<input type="radio" name="answer5" class="Score" value="1" style="width: 50px; height: 20px"/>&nbsp;&nbsp;
+No<input type="radio" name="answer5" class="Score" value="0" checked="checked" style="width: 50px; height: 20px"/></p>
+
+<label>6 Does the organization host any Confidential information in "The Cloud"?</label>
+<p  >Yes<input type="radio" name="answer6" class="Score" value="1" style="width: 50px; height: 20px"/>&nbsp;&nbsp;
+No<input type="radio" name="answer6" class="Score" value="0" checked="checked" style="width: 50px; height: 20px"/></p>
+
+<label>7 Does the Organization encrypt Confidential information stored on Portable Devices, laptops, flash drives, back-ups, smart phones, tablets etc.?</label>
+<p  >Yes<input type="radio" name="answer7" class="Score" value="1" style="width: 50px; height: 20px"/>&nbsp;&nbsp;
+No<input type="radio" name="answer7" class="Score" value="0" checked="checked" style="width: 50px; height: 20px" /></p>
+
+<label>8 Does the organization perform end user training and cyber awareness?</label>
+<p  >Yes<input type="radio" name="answer8" class="Score" value="1" style="width: 50px; height: 20px"/>&nbsp;&nbsp;
+No<input type="radio" name="answer8" class="Score" value="0" checked="checked" style="width: 50px; height: 20px"/></p>
+
+<label>9 Do you have a procedure to monitor material displayed on your website for copyright, trademark, slander or invasion of privacy?</label>
+<p  >Yes<input type="radio" name="answer9" class="Score" value="1" style="width: 50px; height: 20px"/>&nbsp;&nbsp;
+No<input type="radio" name="answer9" class="Score" value="0" checked="checked" style="width: 50px; height: 20px"/></p>
+
+<label>10 Do you have robust firewall, antivirus, anti-malware, and intrusion detection and prevention systems in place?</label>
+<p  >Yes<input type="radio" name="answer10" class="Score" value="1" style="width: 50px; height: 20px"/>&nbsp;&nbsp;
+No<input type="radio" name="answer10" class="Score" value="0" checked="checked" style="width: 50px; height: 20px"/></p>
+
+<!-- Hidden Score Field --> 
+<input type="hidden" name="score" id="score" value="" />
+
+<input class="btn btn-large btn-theme btn-rounded text-center " type="submit" value="Get Risk Score"><!-- score quiz --> 
+ 
+ </form>
+ 
+</div>							
+
+                                        
+  <!--end contact form-->                                      
+
+
+</div>							
+</div>
+</div>
+</div>
+	</section>
+	<style>
+		p{
+			color:aliceblue;
+			
+		}
+	</style>
+	
+ <footer>
+      <div class="container">
+        <div class="row">
+			      <div class="span4 text-center">
+            <div class="widget">
+				<div class="logo ">
+				<img class="logo" src="ico/logow.png" alt="logo" width="70%">
+				</div>
+              <h5 class="widgetheading"></h5>
+             <ul class="social-network" style="padding-top:15px">
+                <li><a href="https://www.facebook.com/Secured-Enterprise-764738030374718/?ref=br_rs" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a></li>
+                <li><a href="https://twitter.com/SecuredEnterpr8" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/secured-enterprise/" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square"></i></a></li>
+                
+             <li><a href="https://www.instagram.com/secured_enterprise/" data-placement="bottom" title="" data-original-title="Instagram">
+                                    <img src="img/instagram.svg" alt="instagram" style="margin:0px 9px 8px 0px; color:#FFFFFF; width: 30px;">
+
+                                    <!--<img src="https://img.icons8.com/ios/ /ffffff/instagram-new.png" alt="instagram"></i> -->
+                                </a></li>
+				 <li><a href="https://www.youtube.com/channel/UCv3wmmbta52TfhnR5vEcMgA" data-placement="bottom" title="" data-original-title="Youtube">
+                                    <img src="img/youtube.svg" alt="instagram" style="margin:0px 15px 8px 0px; color:#FFFFFF; width: 40px;">
+
+                                    <!--<img src="https://img.icons8.com/ios/ /ffffff/instagram-new.png" alt="instagram"></i> -->
+                                </a></li> </ul>
+            </div>
+          </div>
+			      <div class="span4">
+            <div class="widget">
+				<div class="text-center">
+              <h5 class="widgetheading">Download our Brochure</h5>
+				</div>
+				<div class="text-center">
+             <a class="btn btn-large btn-theme btn-rounded text-center" href="img/Secured Enterprise.pdf" >Download</a>
+					</div>
+            </div>
+          </div>
+          <div class="span4 ">
+            <div class="widget" style="text-align: left;padding-left:25%">
+              <h5 class="widgetheading">Browse Pages</h5>
+              <ul class="link-list">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="services.html">Services & Solutions</a></li>
+              <li><a href="blog.html">Blog</a></li>
+               
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        
+    
+       
+		  </div>
+		</div>
+      <div id="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <div class="copyright">
+                <p>
+                  <span>&copy; Secured Enterprise - All right reserved.</span>
+					
+               
+                  Created by <a href="http://www2.enewmedia.co.za/">eNew Media</a>
+               
+                </p>
+               
+              </div>
+            </div>
+            <div class="span6">
+				
+              <ul style="float: right">
+				   <a href="legal.html" style="padding-right: 10px">Legal</a>
+                <a href="legal.html#privacy">Privacy Policy</a>
+              
+              	
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+  <!-- javascript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jcarousel/jquery.jcarousel.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.fancybox-media.js"></script>
+  <script src="js/google-code-prettify/prettify.js"></script>
+  <script src="js/portfolio/jquery.quicksand.js"></script>
+  <script src="js/portfolio/setting.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/jquery.nivo.slider.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/jquery.ba-cond.min.js"></script>
+  <script src="js/jquery.slitslider.js"></script>
+  <script src="js/animate.js"></script>
+
+  <!-- Template Custom JavaScript File -->
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://www2.securedenterprise.com/</loc>
+  <lastmod>2018-08-01T06:15:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www2.securedenterprise.com/index.html</loc>
+  <lastmod>2018-08-01T06:15:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www2.securedenterprise.com/services.html</loc>
+  <lastmod>2018-08-01T06:15:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www2.securedenterprise.com/blog.html</loc>
+  <lastmod>2018-08-01T06:15:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www2.securedenterprise.com/contact.html</loc>
+  <lastmod>2018-07-24T07:52:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www2.securedenterprise.com/assessment-form.html</loc>
+  <lastmod>2018-08-01T06:15:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www2.securedenterprise.com/img/Secured%20Enterprise.pdf</loc>
+  <lastmod>2018-07-06T14:31:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www2.securedenterprise.com/legal.html</loc>
+  <lastmod>2018-08-01T06:15:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www2.securedenterprise.com/blogpages/cybersecurity.html</loc>
+  <lastmod>2018-07-19T10:35:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www2.securedenterprise.com/blogpages/phishing.html</loc>
+  <lastmod>2018-07-19T10:35:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www2.securedenterprise.com/blogpages/cyberattacks.html</loc>
+  <lastmod>2018-07-19T10:35:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www2.securedenterprise.com/blogpages/img/Secured%20Enterprise.pdf</loc>
+  <lastmod>2018-07-06T12:11:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
