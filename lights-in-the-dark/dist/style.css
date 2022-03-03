@@ -1,0 +1,113 @@
+/* - - - - - - - - - - - - - - - - - - - - - -
+General styles
+- - - - - - - - - - - - - - - - - - - - - - */
+html,
+body {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background: #000010;
+	cursor: none !important; /* hide the default cursor   */
+}
+a {
+	position: absolute;
+	right: 300px;
+	bottom: 300px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+	color: #fff;
+}
+a:hover {
+	text-decoration: none;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+Cursor and followers
+- - - - - - - - - - - - - - - - - - - - - - */
+
+/* Styles for the main cursor and the followers */
+.mouse {
+	position: absolute;
+	left: 50%;
+	width: 50%;
+	pointer-events: none;
+	background-color: #FF004C;
+	border-radius: 100%;
+	opacity: 0;
+	z-index: 9999;
+}
+
+/* Styles for the main cursor */
+.cursor {
+	width: 30px;
+	height: 30px;
+	transform: translate(-15px,-15px);
+	filter: blur(22px);
+}
+.cursor.hover {
+	width: 4px;
+	height: 4px;
+	transform: translate(-2px,-2px);
+	filter: blur(0px);
+}
+
+/* Styles for the followers */
+.follow-cursor.first {
+	width: 8px;
+	height: 8px;
+	transform: translate(-4px,-4px);
+	filter: blur(6px);
+	transition: .15s linear;
+}
+.follow-cursor.second {
+	width: 20px;
+	height: 20px;
+	transform: translate(-10px,-10px);
+	filter: blur(10px);
+	transition: .25s linear;
+}
+.follow-cursor.third {
+	width: 30px;
+	height: 30px;
+	transform: translate(-15px,-15px);
+	filter: blur(15px);
+	transition: .55s linear;
+}
+.follow-cursor.fourth {
+	width: 4px;
+	height: 4px;
+	transform: translate(-2px,-2px);
+	filter: blur(4px);
+	transition: .75s linear;
+}
+.follow-cursor.fifth {
+	width: 3px;
+	height: 3px;
+	transform: translate(-1.5px,-1.5px);
+	filter: blur(1px);
+	transition: 1s linear;
+}
+.follow-cursor.hover {
+	width: 72px;
+	height: 72px;
+	transform: translate(-36px,-36px);
+	filter: blur(0px);
+	background: transparent;
+	border: 1px solid #FF004C;
+	border-radius: 0;
+}
+.follow-cursor.hover.second {
+	transform: translate(-36px,-36px) rotate(72deg);
+}
+.follow-cursor.hover.third {
+	transform: translate(-36px,-36px) rotate(288deg);
+}
+.follow-cursor.hover.fourth {
+	transform: translate(-36px,-36px) rotate(144deg);
+}
+.follow-cursor.hover.fifth {
+	transform: translate(-36px,-36px) rotate(216deg);
+}
