@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+         <style>
+			 /*COLUMS 6*/
+			 p.mytop {margin-bottom:30px;}
+			 .btn-class a{
+				 color:#DCDCDC;
+			 }
+			     @media screen and (min-width: 600px) {
+			 .row-flex > .col-sm-6-flex {
+                width: 100%;
+				background-color:red;
+                display: flex;
+                flex-direction: column;
+                float:left;
+					} .row-flex-sm {
+                 display: flex;
+                align-items: initial;
+           
+					 }}
+     @media screen and (min-width: 800px) {
+         
+            .row-flex-sm {
+                 display: flex;
+                align-items: initial;
+                flex-wrap:wrap;
+            }
+
+            .row-flex > .col-sm-6-flex {
+                width: 48%;
+				background-color:red;
+                display: flex;
+                flex-direction: column;
+                float:left;
+            }
+
+            .col-sm-6-flex {
+                padding: 0 15px;
+            }
+
+                .col-sm-6-flex:first-child {
+                    padding-left: 0;
+                }
+
+                .col-sm-6-flex:last-child {
+                    padding-right: 0;
+                }
+
+            .row-flex > .col-sm-6-flex > p.btn-class {
+                margin-top: auto;
+            }
+
+            .row-flex > .col-sm-6-flex > p.mytop {
+                margin-top: 0;
+            }
+			 }
+/*COLUMS 4*/
+
+   @media screen and (min-width: 1070px) {
+
+            .row-flex-sm {
+                display: none;
+            }
+
+            .row-flex {
+                display: flex;
+                align-items: stretch;
+                flex-wrap:wrap;
+            }
+
+                .row-flex > .col-md-4-flex {
+                    width:33.33333333%;
+                    display: flex;
+					background-color:blue;
+                    flex-direction: column;
+                }
+
+            .col-md-4-flex {
+                padding: 0 15px;
+            }
+
+                .col-md-4-flex:first-child {
+                    padding-left: 0;
+                }
+
+                .col-md-4-flex:last-child {
+                    padding-right: 0;
+                }
+
+            .row-flex > .col-md-4-flex > p.btn-class {
+                margin-top: auto;
+            }
+
+            .row-flex > .col-md-4-flex > p.mytop {
+                margin-top: 0;
+            }
+
+			
+			/*COLUMS 3*/
+            .row-flex > .col-md-3-flex {
+                width: 23%;
+				margin :0px 5px;
+				background-color:blue;
+                display: flex;
+                flex-direction: column;
+            }
+          
+            .col-md-3-flex {
+                padding: 0 15px;
+            }
+
+                .col-md-3-flex:first-child {
+                    padding-left: 0;
+                }
+
+                .col-md-3-flex:last-child {
+                    padding-right: 0;
+                }
+
+            .row-flex > .col-md-3-flex > p.btn-class {
+                margin-top: auto;
+            }
+
+            .row-flex > .col-md-3-flex > p.mytop {
+                margin-top: 0;
+            }
+        		
+			/*COLUMS 5*/
+            .row-flex > .col-md-5-flex {
+                width: 40%;
+				background-color:blue;
+                display: flex;
+                flex-direction: column;
+            }
+          
+            .col-md-5-flex {
+                padding: 0 15px;
+            }
+
+                .col-md-5-flex:first-child {
+                    padding-left: 0;
+                }
+
+                .col-md-5-flex:last-child {
+                    padding-right: 0;
+                }
+
+            .row-flex > .col-md-5-flex > p.btn-class {
+                margin-top: auto;
+            }
+
+            .row-flex > .col-md-5-flex > p.mytop {
+                margin-top: 0;
+            }
+		  		
+			/*COLUMS 7*/
+            .row-flex > .col-md-7-flex {
+                width: 55%;
+				background-color:green;
+                display: flex;
+                flex-direction: column;
+            }
+          
+            .col-md-7-flex {
+                padding: 0 15px;
+            }
+
+                .col-md-7-flex:first-child {
+                    padding-left: 0;
+                }
+
+                .col-md-7-flex:last-child {
+                    padding-right: 0;
+                }
+
+            .row-flex > .col-md-7-flex > p.btn-class {
+                margin-top: auto;
+            }
+
+            .row-flex > .col-md-7-flex > p.mytop {
+                margin-top: 0;
+	   }		
+	   
+	   /*COLUMS 9*/
+            .row-flex > .col-md-9-flex {
+                width: 72%;
+				background-color:gray;
+                display: flex;
+                flex-direction: column;
+            }
+          
+            .col-md-9-flex {
+                padding: 0 15px;
+            }
+
+                .col-md-9-flex:first-child {
+                    padding-left: 0;
+                }
+
+                .col-md-9-flex:last-child {
+                    padding-right: 0;
+                }
+
+            .row-flex > .col-md-9-flex > p.btn-class {
+                margin-top: auto;
+            }
+
+            .row-flex > .col-md-9-flex > p.mytop {
+                margin-top: 0;
+	   }}
+.flex-column img{text-align:center;
+                 margin:auto;
+	
+                 margin-top:0px;
+                 margin-bottom:0px;
+             
+}
+			 
+	</style>
+
+<body>
+	  <div  class="container">
+	               <ul class="row-flex  row-flex-sm g-margin-b-10--xs g-margin-b-10--md">     
+    <li class="col-md-3-flex col-sm-6-flex flex-column text-center g-margin-b-50--xs">
+        <img class="icons text-center g-margin-b-10--xs" src="Content/img/icons/main/data.png" alt="data icon" />
+                            <h3 class="g-font-size-18--xs text-center icon-heading"><strong>Data</strong></h3>
+        <p class="mytop g-margin-b-10--xs text-justified">Data is one of your most valuable assets. We can assist to unlock the full potential of knowledge within your data and enable fast and accurate business decisions. </p>
+        <p class="btn-class"><a class="btn" href="Data" role="button">Read More</a></p>
+    </li>
+                  <li class="col-md-9-flex col-sm-6-flex flex-column text-center g-margin-b-50--xs">
+                                     <img class="icons text-center g-margin-b-10--xs" src="Content/img/icons/main/digital.png" alt="it icon" />
+                            <h3 class="g-font-size-18--xs text-center icon-heading"><strong>Digital Transformation</strong></h3>
+        <p class="mytop g-margin-b-10--xs text-justified" >Driving digital business transformation can easily be done which will create more value, increase efficiency and reduce costs for your business. Driving digital business transformation can easily be done which will create more value, increase efficiency and reduce costs for your business.Driving digital business transformation can easily be done which will create more value, increase efficiency and reduce costs for your business.</p>
+        <p class="btn-class"><a class="btn " href="Digital-Transformation" role="button">Read More</a></p>
+    </li>
+</ul><ul class="row-flex row-flex-sm  g-margin-b-10--xs g-margin-b-10--md">
+    <li class="col-md-7-flex col-sm-6-flex flex-column text-center g-margin-b-50--xs">
+        <img class="icons text-center g-margin-b-10--xs" src="Content/img/icons/main/cloud.png" alt="cloud icon" />
+                            <h3 class="g-font-size-18--xs text-center icon-heading"><strong>Cloud</strong></h3>
+        <p class="mytop g-margin-b-10--xs text-justified" >We offer end-to-end cloud based solutions whether private, public or hybrid cloud to meet your exact business requirements.We offer end-to-end cloud based solutions whether private, public or hybrid cloud to meet your exact business requirements. We offer end-to-end cloud based solutions whether private, public or hybrid cloud to meet your exact business requirements.  </p>
+        <p class="btn-class"><a class="btn" href="Cloud" role="button">Read More</a></p>
+    </li>
+    <li class="col-md-5-flex  col-sm-6-flex flex-column text-center g-margin-b-50--xs">
+       <img class="icons text-center g-margin-b-10--xs" src="Content/img/icons/main/security.png" alt="security icon" />
+                            <h3 class="g-font-size-18--xs text-center icon-heading "><strong>Cyber Security</strong></h3>
+        <p class="mytop g-margin-b-10--xs text-justified">By analyzing your company’s security defenses, we establish the vulnerabilities that your company might have and create a tailored security solution that fills the gaps and the needs for your business. </p>
+        <p class="btn-class"><a class="btn " href="Security" role="button">Read More</a></p>
+    </li>
+		  </ul>        
+    
+	</div>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	        <div  class="container">
+	    <ul class="row-flex  row-flex-sm g-margin-b-10--xs g-margin-b-10--md">
+    <li class="col-md-3-flex col-sm-6-flex flex-column text-center g-margin-b-50--xs">
+        <img class="icons text-center g-margin-b-10--xs" src="Content/img/icons/main/cloud.png" alt="cloud icon" />
+                            <h3 class="g-font-size-18--xs text-center icon-heading"><strong>Cloud</strong></h3>
+        <p class="mytop g-margin-b-10--xs text-justified" >We offer end-to-end cloud based solutions whether private, public or hybrid cloud to meet your exact business requirements. </p>
+        <p class="btn-class"><a class="btn " href="Cloud" role="button">Read More</a></p>
+    </li>
+    <li class="col-md-3-flex col-sm-6-flex flex-column text-center g-margin-b-50--xs">
+       <img class="icons text-center g-margin-b-10--xs" src="Content/img/icons/main/security.png" alt="security icon" />
+                            <h3 class="g-font-size-18--xs text-center icon-heading "><strong>Cyber Security</strong></h3>
+        <p class="mytop g-margin-b-10--xs text-justified">By analyzing your company’s security defenses, we establish the vulnerabilities that your company might have and create a tailored security solution that fills the gaps and the needs for your business. </p>
+        <p class="btn-class"><a class="btn " href="Security" role="button">Read More</a></p>
+    </li>
+                  
+                  
+    <li class="col-md-3-flex col-sm-6-flex flex-column text-center g-margin-b-50--xs">
+        <img class="icons text-center g-margin-b-10--xs" src="Content/img/icons/main/data.png" alt="data icon" />
+                            <h3 class="g-font-size-18--xs text-center icon-heading"><strong>Data</strong></h3>
+        <p class="mytop g-margin-b-10--xs text-justified">Data is one of your most valuable assets. We can assist to unlock the full potential of knowledge within your data and enable fast and accu ratea c curat eaccu rate a ccurateaccu rateaccur ateaccu rateaccu rateac  curatea ccurateacc urateaccurateaccurate business decisions. </p>
+        <p class="btn-class"><a class="btn " href="Data" role="button">Read More</a></p>
+    </li>
+                  <li class="col-md-3-flex col-sm-6-flex flex-column text-center g-margin-b-50--xs">
+                                     <img class="icons text-center g-margin-b-10--xs" src="Content/img/icons/main/digital.png" alt="it icon" />
+                            <h3 class="g-font-size-18--xs text-center icon-heading"><strong>Digital Transformation</strong></h3>
+        <p class="mytop g-margin-b-10--xs text-justified" >Driving digital business transformation can easily be done which will create more value, increase efficiency and reduce costs for your business. </p>
+        <p class="btn-class"><a class="btn " href="Digital-Transformation" role="button">Read More</a></p>
+    </li>
+</ul>
+	</div>
+</body>
+</html>
