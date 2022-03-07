@@ -1,0 +1,105 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body, html {
+  background: #cd5;
+}
+
+.navbar {
+  background: #333;
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+.navbar a.nav {
+  font-weight: 900;
+  color: #fff;
+  font-size: 21px;
+}
+.navbar .dropdown {
+  float: left;
+  overflow: hidden;
+}
+.navbar .dropdown .dropbtn {
+  font-size: 21px;
+  padding: 10px 30px;
+  color: #fff;
+  background: inherit;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+}
+.navbar .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.navbar .dropdown .dropdown-content .header {
+  background: pink;
+  padding: 20px;
+  color: #333;
+}
+.navbar .dropdown .dropdown-content .row .column {
+  float: left;
+  padding: 10px;
+  text-align: left;
+  width: calc(100% / 3);
+  background: #f9f9f9;
+}
+.navbar .dropdown .dropdown-content .row .column h3 {
+  padding: 10px;
+  color: #ff8da1;
+}
+.navbar .dropdown .dropdown-content .row .column a {
+  float: none;
+  display: block;
+  color: #333;
+  text-align: left;
+}
+
+.article {
+  padding: 20px;
+  color: #333;
+}
+.article h3 {
+  line-height: 40px;
+}
+
+.navbar > a:hover, .navbar > .dropdown > button:hover {
+  background: red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column > a:hover {
+  background: pink;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+/*遇到的問題：
+ * 若body,html加上margin:5px，.dropdown-content加上margin:0 10px
+ * megamenu展開的時候，右邊會突出去。
+ * 還沒想到解決的辦法... 2017/12/08 15:45 */
