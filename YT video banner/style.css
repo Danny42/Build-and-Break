@@ -1,0 +1,80 @@
+html {
+  font-size: 12px;
+}
+
+body {
+  color: #000;
+  font: 300 1rem/1.44 "Poppins", sans-serif;
+  letter-spacing: .04rem;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+#video {
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+  background: url("https://picsum.photos/1600/900") top center no-repeat #000;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#content {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 600px;
+  padding: 3rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#content h1 {
+  color: #fff;
+}
+#content a {
+  color: #fff;
+  font-weight: 400;
+}
+
+#video-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#video-background iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#video-background:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
