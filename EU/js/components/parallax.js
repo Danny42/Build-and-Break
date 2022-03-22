@@ -1,0 +1,2 @@
+var Parallax=function(){'use strict';var handleParallax=function(){$('.js__parallax-window').parallax("50%",0.1)}
+return{init:function(){handleParallax()}}}();$(document).ready(function(){Parallax.init()})
