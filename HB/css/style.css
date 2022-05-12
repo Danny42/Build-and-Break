@@ -2,11 +2,11 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Glegoo);
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Condensed", sans-serif;
+   font-family: "Times New Roman", Times, serif;
 }
 
 h7 {
@@ -16,9 +16,9 @@ color: white;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+   font-family: "Times New Roman", Times, serif;
   line-height: 22px;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 300;
 }
 
@@ -189,7 +189,7 @@ and (min-width : 551px){
    margin: 20px 0 0 0;
     position: relative;
     top: 14%;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .portfolio-caption a i {
@@ -526,7 +526,7 @@ and (min-width : 551px){
   line-height: 27px;
   text-transform: uppercase;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+   font-family: "Times New Roman", Times, serif;
   margin-top: 25px;
 }
 
@@ -554,7 +554,16 @@ and (min-width : 551px){
   color: #fff;
 	align-content: center;
 }
-
+#call-to-action2 {
+  background: #FFFFFF;
+  background-size: cover;
+  background-attachment: none;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  color: #fff;
+	align-content: center;
+}
 #call-to-action .block {
   position: relative;
   z-index: 99;
@@ -569,7 +578,7 @@ and (min-width : 551px){
 #call-to-action .block p {
   font-size: 15px;
   font-weight: 300;
-  font-family: 'Roboto', sans-serif;
+   font-family: "Times New Roman", Times, serif;
   margin-top: 20px;
 }
 
@@ -880,7 +889,7 @@ article {
 }
 
 .blog-content h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .blog-content h2 a {
